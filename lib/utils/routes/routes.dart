@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mvvm_practice/utils/routes/routes_name.dart';
+import 'package:mvvm_practice/view/Authenticate.dart';
+import 'package:mvvm_practice/view/Email.dart';
 import 'package:mvvm_practice/view/Login_screen.dart';
 
 import '../../view/home_screen.dart';
@@ -12,6 +14,10 @@ class Routes {
     return MaterialPageRoute(builder: (BuildContext context) => HomeScreen());
     case RoutesName.login:
     return MaterialPageRoute(builder: (BuildContext context) => LoginScreen());
+      case RoutesName.Email:
+        return MaterialPageRoute(builder: (BuildContext context) => Email());
+      case RoutesName.authenticate:
+        return MaterialPageRoute(builder: (BuildContext context) => Authenticate());
 
     default:
         return MaterialPageRoute(builder: (_){
